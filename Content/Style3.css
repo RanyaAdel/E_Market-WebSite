@@ -1,0 +1,6 @@
+﻿body {
+    background-color: aqua;
+    background-image: url('../images/images.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

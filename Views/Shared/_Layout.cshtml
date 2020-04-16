@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/Stylelayout.css" rel="stylesheet" />
+</head>
+<body>
+   
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               <a href="#"class="navbar-brand">
+                   <img src="data:image/jpeg;base64,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" width="45" height="30"/>
+               </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "HomePage", "Products")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Categories", "Index", "Categories")</li>
+                    <li>@Html.ActionLink("Products", "Index", "Products")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - E-market</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
